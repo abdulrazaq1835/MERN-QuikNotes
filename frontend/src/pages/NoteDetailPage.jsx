@@ -36,7 +36,7 @@ const NoteDetailPage = () => {
     try {
       await api.delete(`/notes/${id}`);
       toast.success("Note deleted");
-      navigate("/");
+      navigate("/home ");
     } catch (error) {
       console.log("Error deleting the note:", error);
       toast.error("Failed to delete note");
@@ -54,7 +54,7 @@ const NoteDetailPage = () => {
     try {
       await api.put(`/notes/${id}`, note);
       toast.success("Note updated successfully");
-      navigate("/");
+      navigate("/home");
     } catch (error) {
       console.log("Error saving the note:", error);
       toast.error("Failed to update note");

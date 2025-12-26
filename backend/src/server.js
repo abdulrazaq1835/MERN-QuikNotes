@@ -42,13 +42,3 @@ connectDB().then(() => {
     console.log("Server is running on PORT:", PORT);
   });
 });
-```
-
-## **Render Environment Variables mein add karo:**
-
-Backend service → **Environment** tab mein:
-```
-NODE_ENV=production
-JWT_SECRET=your_jwt_secret_key
-MONGODB_URI=your_mongodb_connection_string
-FRONTEND_URL=https://your-frontend-url.onrender.com
